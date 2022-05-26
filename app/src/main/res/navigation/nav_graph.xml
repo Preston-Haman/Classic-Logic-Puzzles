@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/titleScreenFragment">
+    <fragment
+        android:id="@+id/titleScreenFragment"
+        android:name="us.phaman.cpw.classiclogicpuzzles.TitleScreenFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_title_screen">
+        <action
+            android:id="@+id/action_titleScreenFragment_to_chickenFoxGrainExplanationFragment"
+            app:destination="@id/chickenFoxGrainExplanationFragment" />
+        <action
+            android:id="@+id/action_titleScreenFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_titleScreenFragment_to_tutorialFragment"
+            app:destination="@id/tutorialFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chickenFoxGrainExplanationFragment"
+        android:name="us.phaman.cpw.classiclogicpuzzles.ChickenFoxGrainExplanationFragment"
+        android:label="Puzzle Explanation"
+        tools:layout="@layout/fragment_chicken_fox_grain_explanation">
+        <action
+            android:id="@+id/action_chickenFoxGrainExplanationFragment_to_chickenFoxGrainPuzzleFragment"
+            app:destination="@id/chickenFoxGrainPuzzleFragment"
+            app:popUpTo="@id/titleScreenFragment" />
+        <action
+            android:id="@+id/action_chickenFoxGrainExplanationFragment_to_tutorialFragment"
+            app:destination="@id/tutorialFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chickenFoxGrainPuzzleFragment"
+        android:name="us.phaman.cpw.classiclogicpuzzles.ChickenFoxGrainPuzzleFragment"
+        android:label="Chicken/Fox/Grain Puzzle"
+        tools:layout="@layout/fragment_chicken_fox_grain_puzzle">
+        <action
+            android:id="@+id/action_chickenFoxGrainPuzzleFragment_to_tutorialFragment"
+            app:destination="@id/tutorialFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="us.phaman.cpw.classiclogicpuzzles.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about">
+        <action
+            android:id="@+id/action_aboutFragment_to_tutorialFragment"
+            app:destination="@id/tutorialFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tutorialFragment"
+        android:name="us.phaman.cpw.classiclogicpuzzles.TutorialFragment"
+        android:label="Helpful Tips"
+        tools:layout="@layout/fragment_tutorial" />
+</navigation>
