@@ -30,7 +30,8 @@
     </LinearLayout>
 
     <ViewStub
-        android:id="@+id/hints"
+        android:id="@+id/hints_stub"
+        android:inflatedId="@+id/hints"
         android:layout_width="275dp"
         android:layout_height="match_parent"
         android:layout_gravity="end"

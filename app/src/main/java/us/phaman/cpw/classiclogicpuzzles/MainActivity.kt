@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.ViewStub
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
@@ -30,6 +31,10 @@ class MainActivity : AppCompatActivity() {
         //Lock hints until a puzzle is open
         val drawer = findViewById<DrawerLayout>(R.id.drawer_layout)
         drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED, GravityCompat.END)
+
+        //Inflate hints right away
+        val hintStub: ViewStub = findViewById(R.id.hints_stub)
+        hintStub.inflate()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
