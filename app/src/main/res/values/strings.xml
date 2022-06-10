@@ -3,4 +3,46 @@
     <string name="help">Help</string>
     <string name="puzzle_hints_title">Puzzle Hints</string>
     <string name="show_direct_hint">Show Direct Hint</string>
+    <string name="app_description">This app is a collection of logic puzzles created as a class assignment to demonstrate the ability
+        to use Android Features.</string>
+    <string name="app_author_attribution">App Created By: Preston Haman</string>
+    <string name="visit_github_profile">Visit GitHub Profile</string>
+    <string name="app_asset_attribution">Puzzle Assets Created By: LavaTea</string>
+    <string name="visit_patreon_profile">Visit Patreon Profile</string>
+    <string name="return_to_title_screen">Return to Title Screen</string>
+    <string name="cfg_title">Chicken/Fox/Grain Puzzle</string>
+    <string name="cfg_explanation_situation">There are many tellings of this puzzle; but in this case the situation is as follows:
+        A Farmer is traveling with a Chicken, a Fox, and a sack of Grain. They come across a \'totally safe\' bridge in their path and do
+        not have time to find another way around it. The bridge is pretty rundown; and the Farmer fears crossing it with all their items.
+        With no other options, the Farmer decides that they are willing to risk crossing the bridge with one item at a time; however, this
+        leaves the Farmer in a predicament. If they leave the Chicken alone with the Grain, the Chicken will eat it! Likewise, if they leave
+        the Fox alone with the Chicken, the Fox will eat the Chicken! How can the Farmer safely cross the bridge without losing the Grain or
+        the Chicken?</string>
+    <string name="back">Back</string>
+    <string name="start">Start</string>
+    <string name="cfg_title_select">Chicken/Fox/Grain</string>
+    <string name="helpful_tips">Helpful Tips</string>
+    <string name="about">About</string>
+    <string name="tut_tip_text_1">Tap the ? on the toolbar to view this page.</string>
+    <string name="tut_tip_text_2">Swipe from the right during a puzzle to open the hints screen.</string>
+    <string name="tut_tip_text_3">The hints screen offers a summary of the rules, a generic hint, and an optional direct hint.</string>
+    <string name="hints_cfg_rules_summary">You can only cross with one item at a time. If left alone, the fox will eat the chicken;
+        and the chicken will eat the grain.</string>
+    <string name="hints_cfg_generic_hint">You are able to cross the bridge without taking anything with you.</string>
+    <string name="hints_cfg_direct_hint">Try crossing with %s.</string>
+    <string name="hints_cfg_direct_hint_chicken">the Chicken</string>
+    <string name="hints_cfg_direct_hint_fox">the Fox</string>
+    <string name="hints_cfg_direct_hint_grain">the Grain</string>
+    <string name="hints_cfg_direct_hint_nothing">nothing</string>
+    <string name="cfg_puzzle_message_cannot_cross_multiple_items">The bridge looks too dangerous to cross with multiple items.</string>
+    <string name="cfg_puzzle_message_cannot_cross_fox_eat_chicken">If you leave the Fox alone with the Chicken, the Fox will eat the
+        Chicken!</string>
+    <string name="cfg_puzzle_message_cannot_cross_chicken_eat_grain">If you leave the Chicken alone with the Grain, the chicken will eat
+        it!</string>
+    <string name="cfg_puzzle_message_cannot_cross_all_unattended">If you leave everything unattended, the Chicken will eat the Grain,
+        and the Fox will eat the Chicken!</string>
+    <string name="cfg_puzzle_message_cannot_cross_error">You cannot cross like that.</string>
+    <string name="cfg_puzzle_message_puzzle_complete">You have solved the puzzle!</string>
+    <string name="github_profile_url">https://www.github.com/Preston-Haman</string>
+    <string name="patreon_profile_url">https://www.patreon.com/teaoflava</string>
 </resources>
