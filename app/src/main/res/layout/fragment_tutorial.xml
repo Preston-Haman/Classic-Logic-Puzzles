@@ -8,12 +8,12 @@
 
     <TextView
         android:id="@+id/tut_tip1"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="64dp"
-        android:layout_marginEnd="16dp"
-        android:text="Tap the ? on the toolbar to view this page."
+        android:layout_marginEnd="24dp"
+        android:text="@string/tut_tip_text_1"
         app:layout_constraintBottom_toTopOf="@+id/tut_tip2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -23,11 +23,11 @@
 
     <TextView
         android:id="@+id/tut_tip2"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="Swipe from the right during a puzzle to open the hints screen."
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/tut_tip_text_2"
         app:layout_constraintBottom_toTopOf="@+id/tut_tip3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -36,14 +36,13 @@
 
     <TextView
         android:id="@+id/tut_tip3"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="Placeholder for another appliction tip."
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/tut_tip_text_3"
         app:layout_constraintBottom_toTopOf="@+id/tut_back_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tut_tip2" />
 
@@ -54,7 +53,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="128dp"
-        android:text="Back"
+        android:text="@string/back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
