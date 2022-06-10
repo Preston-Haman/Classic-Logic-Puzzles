@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:constantSize="true"
+    android:dither="false"
+    android:variablePadding="false" >
+
+    <item
+        android:drawable="@drawable/chicken"
+        android:state_checked="true"
+        android:state_enabled="true" />
+
+    <!-- TODO: Add alternate assets to display different states -->
+    <item
+        android:drawable="@drawable/chicken"
+        android:state_checked="false"
+        android:state_enabled="true" />
+
+    <item
+        android:drawable="@drawable/chicken"
+        android:state_enabled="false" />
+</selector>
