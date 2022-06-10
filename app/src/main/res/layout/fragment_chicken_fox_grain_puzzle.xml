@@ -6,13 +6,168 @@
     android:layout_height="match_parent"
     tools:context=".ChickenFoxGrainPuzzleFragment">
 
+    <ImageView
+        android:id="@+id/cfg_puzzle_bridge"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/alt_bridge"
+        android:src="@drawable/bridge"
+        app:layout_constraintBottom_toTopOf="@+id/cfg_puzzle_instruction"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/cfg_puzzle_farmer_top"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/alt_farmer"
+        android:src="@drawable/farmer"
+        app:layout_constraintBottom_toTopOf="@+id/cfg_puzzle_chicken_top"
+        app:layout_constraintEnd_toEndOf="@+id/cfg_puzzle_bridge"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cfg_puzzle_bridge"
+        app:layout_constraintTop_toTopOf="@+id/cfg_puzzle_bridge" />
+
+    <ImageView
+        android:id="@+id/cfg_puzzle_chicken_top"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/alt_chicken"
+        android:src="@drawable/chicken"
+        app:layout_constraintBottom_toTopOf="@+id/cfg_puzzle_fox_top"
+        app:layout_constraintEnd_toEndOf="@+id/cfg_puzzle_bridge"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cfg_puzzle_bridge"
+        app:layout_constraintTop_toBottomOf="@+id/cfg_puzzle_farmer_top" />
+
+    <ImageView
+        android:id="@+id/cfg_puzzle_fox_top"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/alt_fox"
+        android:src="@drawable/fox"
+        app:layout_constraintBottom_toTopOf="@+id/cfg_puzzle_grain_top"
+        app:layout_constraintEnd_toEndOf="@+id/cfg_puzzle_bridge"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cfg_puzzle_bridge"
+        app:layout_constraintTop_toBottomOf="@+id/cfg_puzzle_chicken_top"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/cfg_puzzle_grain_top"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/alt_grain"
+        android:src="@drawable/grain"
+        app:layout_constraintBottom_toBottomOf="@+id/cfg_puzzle_bridge"
+        app:layout_constraintEnd_toEndOf="@+id/cfg_puzzle_bridge"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cfg_puzzle_bridge"
+        app:layout_constraintTop_toBottomOf="@+id/cfg_puzzle_fox_top" />
+
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/cfg_puzzle_instruction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This puzzle is not yet implemented..."
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/cfg_puzzle_instruction_text"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@+id/cfg_puzzle_fox_select"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cfg_puzzle_chicken_select" />
+
+    <ToggleButton
+        android:id="@+id/cfg_puzzle_chicken_select"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/chicken_button"
+        android:textColor="#00FFFFFF"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintBottom_toBottomOf="@+id/cfg_puzzle_fox_select"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/cfg_puzzle_fox_select"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cfg_puzzle_fox_select" />
+
+    <ToggleButton
+        android:id="@+id/cfg_puzzle_fox_select"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/fox_button"
+        android:textColor="#00FFFFFF"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintBottom_toTopOf="@+id/cfg_puzzle_cross_bridge_button"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/cfg_puzzle_grain_select"
+        app:layout_constraintHeight="100dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cfg_puzzle_chicken_select" />
+
+    <ToggleButton
+        android:id="@+id/cfg_puzzle_grain_select"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/grain_button"
+        android:textColor="#00FFFFFF"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintBottom_toBottomOf="@+id/cfg_puzzle_fox_select"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cfg_puzzle_fox_select"
+        app:layout_constraintTop_toTopOf="@+id/cfg_puzzle_fox_select" />
+
+    <Button
+        android:id="@+id/cfg_puzzle_cross_bridge_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/cfg_puzzle_cross_bridge_text"
+        app:layout_constraintBottom_toTopOf="@+id/cfg_puzzle_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/cfg_puzzle_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

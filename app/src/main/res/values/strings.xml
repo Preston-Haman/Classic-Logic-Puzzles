@@ -45,4 +45,11 @@
     <string name="cfg_puzzle_message_puzzle_complete">You have solved the puzzle!</string>
     <string name="github_profile_url">https://www.github.com/Preston-Haman</string>
     <string name="patreon_profile_url">https://www.patreon.com/teaoflava</string>
+    <string name="alt_bridge">Image of rundown bridge</string>
+    <string name="cfg_puzzle_instruction_text">Select what you would like to cross with:</string>
+    <string name="cfg_puzzle_cross_bridge_text">Cross Bridge</string>
+    <string name="alt_farmer">Image of Farmer</string>
+    <string name="alt_chicken">Image of Chicken</string>
+    <string name="alt_fox">Image of Fox</string>
+    <string name="alt_grain">Image of Grain</string>
 </resources>
