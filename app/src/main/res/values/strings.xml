@@ -26,8 +26,8 @@
     <string name="tut_tip_text_1">Tap the ? on the toolbar to view this page.</string>
     <string name="tut_tip_text_2">Swipe from the right during a puzzle to open the hints screen.</string>
     <string name="tut_tip_text_3">The hints screen offers a summary of the rules, a generic hint, and an optional direct hint.</string>
-    <string name="hints_cfg_rules_summary">You can only cross with one item at a time. If left alone, the fox will eat the chicken;
-        and the chicken will eat the grain.</string>
+    <string name="hints_cfg_rules_summary">You can only cross with one item at a time. If left alone, the Fox will eat the Chicken;
+        and the Chicken will eat the Grain.</string>
     <string name="hints_cfg_generic_hint">You are able to cross the bridge without taking anything with you.</string>
     <string name="hints_cfg_direct_hint">Try crossing with %s.</string>
     <string name="hints_cfg_direct_hint_chicken">the Chicken</string>
@@ -37,7 +37,7 @@
     <string name="cfg_puzzle_message_cannot_cross_multiple_items">The bridge looks too dangerous to cross with multiple items.</string>
     <string name="cfg_puzzle_message_cannot_cross_fox_eat_chicken">If you leave the Fox alone with the Chicken, the Fox will eat the
         Chicken!</string>
-    <string name="cfg_puzzle_message_cannot_cross_chicken_eat_grain">If you leave the Chicken alone with the Grain, the chicken will eat
+    <string name="cfg_puzzle_message_cannot_cross_chicken_eat_grain">If you leave the Chicken alone with the Grain, the Chicken will eat
         it!</string>
     <string name="cfg_puzzle_message_cannot_cross_all_unattended">If you leave everything unattended, the Chicken will eat the Grain,
         and the Fox will eat the Chicken!</string>
