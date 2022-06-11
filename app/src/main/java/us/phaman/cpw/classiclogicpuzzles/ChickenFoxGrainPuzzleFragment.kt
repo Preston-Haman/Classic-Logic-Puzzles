@@ -18,7 +18,7 @@ import androidx.lifecycle.ViewModelProvider
 
 class ChickenFoxGrainPuzzleFragment : Fragment() {
 
-    lateinit var model: ChickenFoxGrainPuzzleModel
+    private lateinit var model: ChickenFoxGrainPuzzleModel
 
     @SuppressLint("SourceLockedOrientationActivity")
     override fun onCreateView (
@@ -81,15 +81,18 @@ class ChickenFoxGrainPuzzleFragment : Fragment() {
                     //If the user triggers this, then the button should have been disabled from the start!
                     ChickenFoxGrainPuzzleModel.CFGItem.CHICKEN -> {
                         chickenButton.isEnabled = false
+                        chickenButton.isClickable = false
                         chickenButton.isChecked = false
                     }
 
                     ChickenFoxGrainPuzzleModel.CFGItem.FOX -> {
                         foxButton.isEnabled = false
+                        foxButton.isClickable = false
                         foxButton.isChecked = false
                     }
                     ChickenFoxGrainPuzzleModel.CFGItem.GRAIN -> {
                         grainButton.isEnabled = false
+                        grainButton.isClickable = false
                         grainButton.isChecked = false
                     }
                     else -> {
@@ -111,6 +114,9 @@ class ChickenFoxGrainPuzzleFragment : Fragment() {
 
             //Set image positions
             model.adjustLayoutConstraintBasedOnPositions(farmerImage, chickenImage, foxImage, grainImage)
+
+            //Enable all items (marks all as clickable again, as well)
+            setEnabled(true, chickenButton, foxButton, grainButton)
 
             //Enable selection buttons for items on the same side as the farmer...
             model.enableButtonsBasedOnFarmerPosition(chickenButton, foxButton, grainButton)
@@ -188,6 +194,9 @@ class ChickenFoxGrainPuzzleFragment : Fragment() {
     private fun setEnabled(enabled: Boolean, vararg buttons: Button) {
         for (button in buttons) {
             button.isEnabled = enabled
+            if (enabled) {
+                button.isClickable = true
+            }
         }
     }
 }

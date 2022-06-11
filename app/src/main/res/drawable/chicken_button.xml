@@ -5,17 +5,21 @@
     android:variablePadding="false" >
 
     <item
-        android:drawable="@drawable/chicken"
+        android:drawable="@drawable/chicken_unclickable"
+        android:state_checkable="false" />
+
+    <item
+        android:drawable="@drawable/chicken_disabled"
+        android:state_checkable="true"
+        android:state_enabled="false" />
+
+    <item
+        android:drawable="@drawable/chicken_select"
         android:state_checked="true"
         android:state_enabled="true" />
 
-    <!-- TODO: Add alternate assets to display different states -->
     <item
-        android:drawable="@drawable/chicken"
+        android:drawable="@drawable/chicken_deselect"
         android:state_checked="false"
         android:state_enabled="true" />
-
-    <item
-        android:drawable="@drawable/chicken"
-        android:state_enabled="false" />
 </selector>
