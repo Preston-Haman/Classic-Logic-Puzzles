@@ -96,7 +96,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/cfg_puzzle_chicken_select" />
 
-    <ToggleButton
+    <us.phaman.cpw.classiclogicpuzzles.CheckableToggleButton
         android:id="@+id/cfg_puzzle_chicken_select"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -113,7 +113,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/cfg_puzzle_fox_select" />
 
-    <ToggleButton
+    <us.phaman.cpw.classiclogicpuzzles.CheckableToggleButton
         android:id="@+id/cfg_puzzle_fox_select"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -130,7 +130,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/cfg_puzzle_chicken_select" />
 
-    <ToggleButton
+    <us.phaman.cpw.classiclogicpuzzles.CheckableToggleButton
         android:id="@+id/cfg_puzzle_grain_select"
         android:layout_width="0dp"
         android:layout_height="0dp"
